@@ -5,8 +5,8 @@
     box-sizing: border-box;
 }
 body{
-    background: #080808;
-    color: #fff;
+    background: #fff;
+    color: #080808;
 }
 #header{
     position: relative;
