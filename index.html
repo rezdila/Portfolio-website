@@ -16,8 +16,21 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
         var video = document.getElementById('video-overlay');
-        video.playbackRate = 0.5; // Adjust the playback rate as needed
+        video.playbackRate = 0.8; // Adjust the playback rate as needed
         });
+    </script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    var video = document.getElementById('video-overlay');
+    
+    // Smooth fade-in animation already applied in CSS
+    
+    video.onended = function() {
+        video.classList.add('fade-out');
+    };
+});
+
     </script>
 </body>
 </html>
