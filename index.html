@@ -11,6 +11,19 @@
         <video id="video-overlay" autoplay muted loop>
             <source src="videos/overlay.mp4" type="video/mp4">
         </video>
+
+        <div class="container">
+            <nav>
+                <!--<img src="Images/2.jpg" class="logo">-->
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
 
     <script>
@@ -19,7 +32,7 @@
         video.playbackRate = 0.8; // Adjust the playback rate as needed
         });
     </script>
-    
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
     var video = document.getElementById('video-overlay');
@@ -29,8 +42,10 @@
     video.onended = function() {
         video.classList.add('fade-out');
     };
-});
-
+    });
     </script>
+
+
+
 </body>
 </html>
