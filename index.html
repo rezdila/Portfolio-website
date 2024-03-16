@@ -52,14 +52,56 @@
                            on purpose (injected humour and 
                            the like).</p>
                     <div class="tab-titles">
-                        <p class="tab-links">Skils</p>
-                        <p class="tab-links">Experience</p>
-                        <p class="tab-links">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skils</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Logo</span><br>Designing professional logos</li>
+                            <li><span>UI/UX</span><br>Designing web/app interfaces</li>
+                            <li><span>Web development</span><br>Designing web applications</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023-Current</span><br>Upwork Designer</li>
+                            <li><span>2019-2023</span><br>BET(Hons) Degree </li>
+                            <li><span>2017-2019</span><br>Designer at Fiver</li>
+                            <li><span>2016-2017</span><br>A/L Exams</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>BET(Hons) Degree </li>
+                            <li><span>2017</span><br>A/L Exams</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!--Services Section-->
+
+
+
+    
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
 
 </body>
 </html>
