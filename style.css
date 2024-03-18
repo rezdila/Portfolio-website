@@ -25,7 +25,7 @@ body{
     transform: translateX(-50%);
     width: 80%;
 }
-#container-header{      /* only for header */
+#container-header{     /* only for header */
     padding: 20px;
     align-items: center;
     position: absolute;
