@@ -322,9 +322,36 @@ nav ul li a:hover::after{
 }
 form input, form textarea{
     width: 100%;
-    border: 0;
+    border: 1px;
     outline: 1px;
-    background: #fff;
+    background: #d7d7d7;
     padding: 15px;
-
+    margin: 15px 0;
+    color: #080808;
+    font-size: 18px;
+    border-radius: 6px;
 }
+form .button2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #fff;
+}
+.copyright{
+    background-color:#313806;
+    width: 100%;
+    padding: 25px 0;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 300;
+}
+.copyright p{
+    color: #fff;
+}
+.copyright p i{
+    size: 0.4em;
+}
+
+/* -----------CSS for small screen------------- */
+
