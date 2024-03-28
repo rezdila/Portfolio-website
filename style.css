@@ -66,14 +66,14 @@ body{
     left: 50%;
     transform: translateX(-50%);
 }
-nav {
+#nav {
     position: fixed;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     width: 100%; /* Adjust width as needed */
     z-index: 1000;
     background-color: rgba(215, 215, 215, 0.9); /* Example background color */
@@ -81,25 +81,27 @@ nav {
     padding: 10px 20px; /* Example padding */
     box-sizing: border-box; /* Ensures padding and border are included in the width */
 }
-
-nav ul li{
+#nav ul{
+    align-items: center;
+}
+#nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
     transition: transform 0.3s ease;
 }
-nav ul li a{
+#nav ul li a{
     color: #080808;
     text-decoration: none;
     font-size: 18px;
     position: relative;
 }
 
-nav ul li:hover{
+#nav ul li:hover{
     transform: scale(1.2);
 }
 
-nav ul li a::after{
+#nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
@@ -109,7 +111,7 @@ nav ul li a::after{
     bottom: -6px;
     transition: 0.5s;
 }
-nav ul li a:hover::after{
+#nav ul li a:hover::after{
     width: 75%;
 }
 .header-text{
