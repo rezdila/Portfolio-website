@@ -449,15 +449,15 @@ form .button2{
     background-color: #0f0f0f;
 }
 .copyright{
-    background-color:#313806;
+    background-color:#efeded;
     width: 100%;
-    padding: 25px 0;
+    padding: 10px 0;
     text-align: center;
     margin-top: 20px;
     font-weight: 300;
 }
 .copyright p{
-    color: #fff;
+    color: #0f0f0f;
 }
 .copyright p i{
     size: 0.4em;
