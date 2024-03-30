@@ -131,7 +131,7 @@ body{
     margin-bottom: 40px;
 }
 .home-btns{
-    width: 45%;
+    width: 450px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);    
     align-items: center;
@@ -141,12 +141,13 @@ body{
     display: block;
     border-radius: 25px;
     width: fit-content;
-    padding: 8px 60px;
+    padding: 8px 50px;
     background-color: #404040;
     text-decoration: none;
     color: #7d7d7d;
     transition: background 0.5s;
     transition: color 0.5s;
+    transform: translateX(-5px);
 }
 .button-new:hover{
     background: #fe1e1c;
