@@ -9,7 +9,7 @@ body{
     color: #efeded;
     user-select: none;
 }
-@keyframes fadeIn {
+/* @keyframes fadeIn {
     0% {
         opacity: 0;
     }
@@ -33,13 +33,14 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1; /* Ensure the video is behind other content */
-    opacity: 0.1; /* Adjust opacity as needed */
+    z-index: -1; 
+    opacity: 0.1; 
     animation: fadeIn 3s ease-in-out forwards;
 }
 .background-video.fade-out{
     animation: fadeOut 3s ease-in-out forwards;
-}
+} */
+
 
 /* --------------------Header--------------------- */
 
@@ -119,16 +120,43 @@ body{
 .header-text{
     margin-top: 20%;
     padding-left: 50px;
-    font-size: 30px;
+    font-size: 20.5px;
     text-align: left;
 }
 .header-text h1{
     font-size: 60px;
     margin-top: 20px;
 }
-.header-text h1 span{
-    color: #fe1e1c;
+.header-text p{
+    margin-bottom: 40px;
 }
+.home-btns{
+    width: 45%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);    
+    align-items: center;
+    list-style: none;
+}
+.button-new{
+    display: block;
+    border-radius: 25px;
+    width: fit-content;
+    padding: 8px 60px;
+    background-color: #404040;
+    text-decoration: none;
+    color: #7d7d7d;
+    transition: background 0.5s;
+    transition: color 0.5s;
+}
+.button-new:hover{
+    background: #fe1e1c;
+    color: #efeded;
+    font-weight: bold;
+}
+
+/* .header-text h1 span{
+    color: #fe1e1c;
+} */
 
 /*-------------About--------------*/
 
@@ -148,7 +176,7 @@ body{
 }
 .about-col-1 img{
     width: 100%;
-    border-radius: 10px;
+    border-radius: 50%;
 }
 .about-col-2{
     flex-basis: 60%;
