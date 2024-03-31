@@ -1,14 +1,20 @@
+// script.js
+const videoLink = document.getElementById('yt');
+const videoPopup = document.getElementById('video-popup');
+const closeButton = document.getElementById('close-button');
 
-const videoButton = document.getElementById('yt');
-const videoModal = document.getElementById('video-modal');
-
-videoButton.addEventListener('click', () => {
-    videoModal.style.display = 'block';
+videoLink.addEventListener('click', () => {
+    videoPopup.style.display = 'block';
 });
 
-// Close the modal when clicking outside the video or on the modal itself
+// Close the pop-up when clicking outside the video or on the close button
 document.addEventListener('click', (event) => {
-    if (event.target === videoModal || event.target === videoButton) {
-        videoModal.style.display = 'none';
+    if (event.target !== videoLink && event.target !== videoPopup && event.target !== closeButton) {
+        videoPopup.style.display = 'none';
     }
+});
+
+// Additional: Close the pop-up when the close button is clicked
+closeButton.addEventListener('click', () => {
+    videoPopup.style.display = 'none';
 });
