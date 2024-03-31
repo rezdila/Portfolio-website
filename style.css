@@ -157,6 +157,7 @@ body{
     background: #fe1e1c;
     color: #efeded;
     font-weight: bold;
+    box-shadow: 3px 3px 25px rgba(15, 15, 15, 1);
 }
 
 /* .header-text h1 span{
@@ -227,6 +228,7 @@ body{
     background: #fe1e1c;
     color: #efeded;
     font-weight: bold;
+    box-shadow: 3px 3px 25px rgba(15, 15, 15, 1);
 }
 /* .tab-titles{
     display: flex;
