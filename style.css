@@ -189,7 +189,7 @@ body{
 }
 .about-col-1{
     flex-basis: 45%;
-    align-items: center;
+    align-content: center;
 }
 .about-col-1 #Anime{
     width: 100%;
