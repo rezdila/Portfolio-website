@@ -201,26 +201,18 @@ body{
     color: #fe1e1c;
 }
 /* styles.css */
-.modal {
+.popup {
+    z-index: 2000;
     display: none;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-    z-index: 1000; /* Ensure the modal appears above other content */
-    backdrop-filter: blur(5px); /* Apply the blur effect to the background */
-}
-
-.modal-content {
-    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
-    padding: 20px;
+    padding: 0px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
 }
+
 
 /* .header-text h1 span{
     color: #fe1e1c;
