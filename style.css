@@ -189,6 +189,7 @@ body{
     color: #fe1e1c;
     margin-left: 10px;
     font-size: 30px;
+    font-weight: bold;
     transform: translateY(5px);
 }
 #yt:hover{
@@ -199,6 +200,31 @@ body{
 #yt:hover i{
     color: #fe1e1c;
 }
+#if{
+    aspect-ratio: 16 / 9;
+}
+/* styles.css */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    z-index: 1000; /* Ensure the modal appears above other content */
+    backdrop-filter: blur(5px); /* Apply the blur effect to the background */
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+}
+
 /* .header-text h1 span{
     color: #fe1e1c;
 } */
