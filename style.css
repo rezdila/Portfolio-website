@@ -200,9 +200,6 @@ body{
 #yt:hover i{
     color: #fe1e1c;
 }
-#if{
-    aspect-ratio: 16 / 9;
-}
 /* styles.css */
 .modal {
     display: none;
