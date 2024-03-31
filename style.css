@@ -90,7 +90,7 @@ body{
 #nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
+    margin: 15px 20px;
     transition: transform 0.3s ease;
 }
 #nav ul li a{
@@ -107,7 +107,7 @@ body{
 #nav ul li a::after{
     content: '';
     width: 0;
-    height: 3px;
+    height: 1.5px;
     background: #fe1e1c;
     position: absolute;
     left: 0;
@@ -174,7 +174,7 @@ body{
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
-    width: 85%;
+    width: 80%;
     size: 50px;
 }
 
@@ -184,19 +184,22 @@ body{
     flex-wrap: wrap;
 }
 .about-col-1{
-    flex-basis: 35%;
-    vertical-align: middle;
+    flex-basis: 40%;
+    align-content: center;
 }
 .about-col-1 img{
     width: 100%;
     border-radius: 50%;
 }
 .about-col-2{
-    flex-basis: 60%;
+    flex-basis: 55%;
+    align-content: center;
+    padding: 10% 0;
 }
 .about-col-2 p{
-    padding: 2% 0;
+    padding: 2% 0 6% 0;
     font-size: 20.5px;
+    text-align: justify;
 }
 .sub-title{
     font-size: 60px;
@@ -205,15 +208,16 @@ body{
 }
 .button-more{
     display: block;
+    font-size: 20.5px;
     border-radius: 25px;
     width: fit-content;
-    padding: 5px 50px;
+    padding: 5px 70px;
     background-color: #404040;
     text-decoration: none;
     color: #7d7d7d;
     transition: background 0.5s;
     transition: color 0.5s;
-    transform: translateX(-5px);
+    transform: translateX(-10px);
 }
 .button-more:hover{
     background: #fe1e1c;
