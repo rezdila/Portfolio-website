@@ -81,8 +81,12 @@ body{
     z-index: 1000;
     background-color: rgba(15, 15, 15, 0.9); /* Example background color */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Example box shadow */
-    padding: 10px 20px; /* Example padding */
+    padding: 0 20px; /* Example padding */
     box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+#nav img{
+    height: 80px;
+    width: 80px;
 }
 #nav ul{
     align-items: center;
@@ -174,7 +178,7 @@ body{
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
-    width: 80%;
+    width: 90%;
     size: 50px;
 }
 
@@ -184,15 +188,15 @@ body{
     flex-wrap: wrap;
 }
 .about-col-1{
-    flex-basis: 40%;
-    align-content: center;
+    flex-basis: 45%;
+    align-items: center;
 }
-.about-col-1 img{
+.about-col-1 #Anime{
     width: 100%;
     border-radius: 50%;
 }
 .about-col-2{
-    flex-basis: 55%;
+    flex-basis: 50%;
     align-content: center;
     padding: 10% 0;
 }
@@ -282,7 +286,7 @@ body{
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
-    border-radius: 10px;
+    border-radius: 30px;
     opacity: 0.9;
     transition: background 0.5s,transform 0.5s;
 }
