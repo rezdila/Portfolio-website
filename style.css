@@ -141,7 +141,7 @@ body{
     display: block;
     border-radius: 25px;
     width: fit-content;
-    padding: 8px 50px;
+    padding: 5px 50px;
     background-color: #404040;
     text-decoration: none;
     color: #7d7d7d;
@@ -167,6 +167,17 @@ body{
     padding: 50px 0;
     color: #efeded;
 }
+.container-about{         /* for Each container Header,About,...etc  */
+    padding: 50px;
+    align-items: center;
+    position: relative;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+    size: 50px;
+}
+
 .row{
     display: flex;
     justify-content: space-between;
@@ -174,6 +185,7 @@ body{
 }
 .about-col-1{
     flex-basis: 35%;
+    vertical-align: middle;
 }
 .about-col-1 img{
     width: 100%;
@@ -184,13 +196,31 @@ body{
 }
 .about-col-2 p{
     padding: 2% 0;
+    font-size: 20.5px;
 }
 .sub-title{
     font-size: 60px;
     font-weight: 600;
     color: #efeded;
 }
-.tab-titles{
+.button-more{
+    display: block;
+    border-radius: 25px;
+    width: fit-content;
+    padding: 5px 50px;
+    background-color: #404040;
+    text-decoration: none;
+    color: #7d7d7d;
+    transition: background 0.5s;
+    transition: color 0.5s;
+    transform: translateX(-5px);
+}
+.button-more:hover{
+    background: #fe1e1c;
+    color: #efeded;
+    font-weight: bold;
+}
+/* .tab-titles{
     display: flex;
     margin: 20px 0 40px;
 }
@@ -227,7 +257,7 @@ body{
 }
 .tab-contents.active-tab{
     display: block;
-}
+} */
 
 /* -----------Services----------- */
 
@@ -243,6 +273,7 @@ body{
     margin-top: 50px;
 }
 .services-list div{
+    text-align: center;
     background: #404040;
     padding: 40px;
     font-size: 13px;
