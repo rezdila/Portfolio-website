@@ -4,6 +4,9 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background: #202020;
     color: #efeded;
@@ -85,6 +88,10 @@ body{
     box-sizing: border-box; /* Ensures padding and border are included in the width */
 }
 #nav img{
+    height: 80px;
+    width: 80px;
+}
+#nav a{
     height: 80px;
     width: 80px;
 }
