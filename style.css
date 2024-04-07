@@ -447,7 +447,7 @@ body{
 .work:hover .layer{
     height: 100%;
 }
-.button{
+/* .button{
     display: block;
     border-radius: 6px;
     border: 1px solid #efeded;
@@ -462,7 +462,7 @@ body{
 .button:hover{
     background: #efeded;
     color: #0f0f0f;
-}
+} */
 .mw-btn-container{
     display: flex;
     padding: 0px 50px 50px 50px;
@@ -553,7 +553,11 @@ body{
 #contact{
     position: relative;
     top: 0;
-    padding: 50px 0;
+    padding: 0;
+}
+.row-contact{
+    display: flex;
+    justify-content: space-between;
 }
 .contact-left{
     flex-basis: 35%;
@@ -584,12 +588,16 @@ body{
     color: #efeded;
     transform: translateY(-5px);
 }
-.button.button2{
+.button-mywork.cn{
     display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    transform: translateX(-10px);
 }
 .contact-right form{
     margin-top: 0;
     width: 100%;
+    margin-left: 20px;
 }
 form input, form textarea{
     width: 100%;
@@ -597,21 +605,24 @@ form input, form textarea{
     outline: 1px;
     background: #404040;
     padding: 15px;
-    margin: 20px 0;
+    margin: 15px 0;
     color: #efeded;
     font-size: 18px;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 form textarea{
     resize: vertical;
     min-height: 12em;
 }
-form .button2{
-    padding: 14px 60px;
-    font-size: 18px;
-    margin-top: 20px;
+form .sbmt{
+    padding: 5px 50px;
+    font-size: 20.5px;
+    margin-top: 30px;
     cursor: pointer;
-    background-color: #0f0f0f;
+    background-color: #404040;
+    text-decoration: none;
+    border: none;
+
 }
 .copyright{
     background-color:#efeded;
