@@ -20,14 +20,14 @@
 
     <div id="header">
         <div id="nav">
-            <img src="Images/logo.png" alt="Logo">
+            <a href="#header"><img src="Images/logo.png" alt="Logo"></a>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Feedbacks</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#Feedbacks">Feedbacks</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
         <div class="container">
@@ -166,7 +166,7 @@
 
     <!-- ------------Testimonial Section------------ -->
     
-    <div class="container">
+    <div class="container" id="Feedbacks">
         <h1 style="text-align: center;font-size: 30px;">What Clients Say!</h1>
     </div>
     <section id="slider">
@@ -212,19 +212,21 @@
                     <a href="/Files/Web Technology.pdf" download class="button-mywork cn">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form action="">
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="text" name="Email" placeholder="Your Email" required>
                         <input type="text" name="Subject" placeholder="Subject">
                         <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
                         <button  type="submit" class="button-mywork sbmt">Submit</button>
                     </form>
+                    
                 </div>
             </div>
     </div>
     <div class="copyright">
         <p>Copyright <i class="fa-regular fa-copyright"></i> Lakshan_Jay.</p>
     </div>
+
     <script>
 
         var tablinks = document.getElementsByClassName("tab-links");
@@ -242,7 +244,22 @@
         }
     </script>
 
-<script src="script.js"></script>
+    <script src="script.js">
+    </script>
 
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwR4M0uB8HOZ5bxXrrVUAA3pFLBbO-C7wO0Byg6oPP31WXyuu25Awbz_FJIEV-ufLK86Q/exec'
+        const form = document.forms['submit-to-google-sheet']
+    
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                alert("Message sent successfully!")
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
 </body>
 </html>
