@@ -632,7 +632,7 @@ form .sbmt{
 
 }
 .copyright{
-    background-color:#efeded;
+    background-color:#0f0f0f;
     width: 100%;
     padding: 10px 0;
     text-align: center;
@@ -640,7 +640,7 @@ form .sbmt{
     font-weight: 300;
 }
 .copyright p{
-    color: #0f0f0f;
+    color: #ffffff;
 }
 .copyright p i{
     size: 0.4em;
