@@ -4,9 +4,6 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-html{
-    scroll-behavior: smooth;
-}
 body{
     background: #202020;
     color: #efeded;
@@ -54,23 +51,28 @@ body{
     font-weight: 600;
     color: #efeded;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 .container{         /* for Each container Header,About,...etc  */
-    padding: 50px;
+    padding: 0;
     align-items: center;
     position: relative;
-    top: 10px;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 80%;
+    width: 100%;
     size: 50px;
+}
+.container#blur.active{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
 }
 .work-list{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);    
-    grid-gap: 40px;
-    margin: 50px 150px; 
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 4vw;
+    margin: 4vh 10vw; 
 }
 .work{
     border-radius: 8px;
@@ -135,11 +137,11 @@ body{
 
 
 .copyright{
-    background-color:#0f0f0f;
+    background-color: rgba(red, green, blue, alpha);
     width: 100%;
     padding: 10px 0;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
     font-weight: 300;
 }
 .copyright p{
@@ -147,4 +149,35 @@ body{
 }
 .copyright p i{
     size: 0.4em;
+}
+#popup1{
+    display: grid;
+    grid-template-columns: repeat(auto,1fr);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    width: 50vw;
+    height: 90vh;
+    padding: 0;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .3);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    background: #efeded;
+    overflow-y: auto;
+}
+img{
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+#popup1.active{
+    top: 40%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+.x-icon{
+
 }
