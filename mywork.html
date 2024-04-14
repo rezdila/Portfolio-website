@@ -9,13 +9,51 @@
     <script src="https://kit.fontawesome.com/d0d898c3f7.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<div class="container" id="blur">
     <video autoplay loop muted class="background-video" id="bg">
         <source src="/videos/bg.mp4" type="video/mp4">
     </video>
     <h1 class="sub-title">My Works</h1>
     <div class="work-list">
+
         <div class="work">
-            <a href="">
+            <a href="#" onclick="toggle(); toggle1()">
+            <img src="/Images/01/front-11.jpg">
+            <div class="layer">
+                <h3>First Logo</h3>
+                <p>Description of the first logo you have made recently</p>
+            </div>
+            </a>
+        </div>
+        <div class="work">
+            <a href="#" onclick="toggle()">
+            <img src="/Images/02/02-01.jpg">
+            <div class="layer">
+                <h3>Second Logo</h3>
+                <p>Description of the second logo you have made recently</p>
+            </div>
+            </a>
+        </div>
+        <div class="work">
+            <a href="#" onclick="toggle()">
+            <img src="/Images/03/Parsalee-01.jpg">
+            <div class="layer">
+                <h3>Third Logo</h3>
+                <p>Description of the third logo you have made recently</p>
+            </div>
+        </a>
+        </div>
+        <div class="work">
+            <a href="#" onclick="toggle()">
+            <img src="/Images/04/04-01.jpg">
+            <div class="layer">
+                <h3>Third Logo</h3>
+                <p>Description of the third logo you have made recently</p>
+            </div>
+            </a>
+        </div>
+        <div class="work">
+            <a href="#"  onclick="toggle()">
             <img src="Images/s1.jpg">
             <div class="layer">
                 <h3>First Logo</h3>
@@ -24,7 +62,7 @@
             </a>
         </div>
         <div class="work">
-            <a href="">
+            <a href="#"  onclick="toggle()">
             <img src="Images/s2.jpg">
             <div class="layer">
                 <h3>Second Logo</h3>
@@ -33,7 +71,7 @@
             </a>
         </div>
         <div class="work">
-            <a href="">
+            <a href="#" onclick="toggle()">
             <img src="Images/s3.jpg">
             <div class="layer">
                 <h3>Third Logo</h3>
@@ -42,43 +80,7 @@
         </a>
         </div>
         <div class="work">
-            <a href="">
-            <img src="Images/s3.jpg">
-            <div class="layer">
-                <h3>Third Logo</h3>
-                <p>Description of the third logo you have made recently</p>
-            </div>
-            </a>
-        </div>
-        <div class="work">
-            <a href="">
-            <img src="Images/s1.jpg">
-            <div class="layer">
-                <h3>First Logo</h3>
-                <p>Description of the first logo you have made recently</p>
-            </div>
-            </a>
-        </div>
-        <div class="work">
-            <a href="">
-            <img src="Images/s2.jpg">
-            <div class="layer">
-                <h3>Second Logo</h3>
-                <p>Description of the second logo you have made recently</p>
-            </div>
-            </a>
-        </div>
-        <div class="work">
-            <a href="">
-            <img src="Images/s3.jpg">
-            <div class="layer">
-                <h3>Third Logo</h3>
-                <p>Description of the third logo you have made recently</p>
-            </div>
-        </a>
-        </div>
-        <div class="work">
-            <a href="">
+            <a href="#" onclick="toggle()">
             <img src="Images/s3.jpg">
             <div class="layer">
                 <h3>Third Logo</h3>
@@ -87,14 +89,44 @@
             </a>
         </div>
     </div>
-
-
     <div class="copyright">
         <p>Copyright <i class="fa-regular fa-copyright"></i> 2024-Lakshan_Jay. All rights reserved.</p>
     </div>
+</div>
+<div id="popup1">
+    <a href="#" class="x-icon" onclick="toggle(); toggle1()"><i class="fa-solid fa-xmark"></i></a>
+    <img src="/Images/popup1/01-01.jpg" alt="">
+    <img src="/Images/popup1/01-02.jpg" alt="">
+    <img src="/Images/popup1/01-03.jpg" alt="">   
+    <img src="/Images/popup1/01-04.jpg" alt="">   
+    <img src="/Images/popup1/01-05.jpg" alt="">   
+    <img src="/Images/popup1/01-06.jpg" alt="">   
+    <img src="/Images/popup1/01-07.jpg" alt="">   
+    <img src="/Images/popup1/01-08.jpg" alt="">   
+    <img src="/Images/popup1/01-09.jpg" alt="">   
+    <img src="/Images/popup1/01-10.jpg" alt="">   
+    <img src="/Images/popup1/01-11.jpg" alt="">   
+    <img src="/Images/popup1/01-12.jpg" alt="">   
+    <img src="/Images/popup1/01-13.jpg" alt="">   
+    <img src="/Images/popup1/01-14.jpg" alt="">   
+    <img src="/Images/popup1/01-15.jpg" alt="">   
+    <img src="/Images/popup1/01-16.jpg" alt="">   
+</div>
+
+
     <script>
         let vid = document.getElementById("bg");
         vid.playbackRate = 0.5;
+    </script>
+    <script type="text/javascript">
+        function toggle(){
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active')
+        }
+        function toggle1(){
+            var popup1 = document.getElementById('popup1');
+            popup1.classList.toggle('active')
+        }
     </script>
 </body>
 </html>
