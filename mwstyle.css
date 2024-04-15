@@ -159,9 +159,14 @@ img{
     width: 100%;
     margin: 0;
 }
-/* .x-icon{
-
-} */
+.x-icon{
+    font-size: 30px;
+    text-align: right;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
 .popup{
     display: grid;
     grid-template-columns: repeat(auto,1fr);
