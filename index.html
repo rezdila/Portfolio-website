@@ -18,6 +18,7 @@
 
 
     <div id="header">
+        
         <div id="nav">
             <a href="#header"><img src="Images/logo.png" alt="Logo"></a>
             <ul>
@@ -52,7 +53,10 @@
         </div>
     </div>
 <!--About section-->
-    <div id="about">
+    <div id="about" style="padding: 0;">
+        <video autoplay loop muted class="background-video" id="bg">
+            <source src="videos/bg.mp4" type="video/mp4">
+        </video>
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
@@ -69,33 +73,7 @@
                         memorable.</p>
 
                     <a href="about.html" class="button-more">More</a>
-                   
-                    <!-- <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skils</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Logo</span><br>Designing professional logos</li>
-                            <li><span>UI/UX</span><br>Designing web/app interfaces</li>
-                            <li><span>Web development</span><br>Designing web applications</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2023-Current</span><br>Upwork Designer</li>
-                            <li><span>2019-2023</span><br>BET(Hons) Degree </li>
-                            <li><span>2017-2019</span><br>Designer at Fiver</li>
-                            <li><span>2016-2017</span><br>A/L Exams</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2023</span><br>BET(Hons) Degree </li>
-                            <li><span>2017</span><br>A/L Exams</li>
-                        </ul>
-                    </div> -->
+                    
                 </div>
             </div>
         </div>
@@ -235,6 +213,10 @@
             })
             .catch(error => console.error('Error!', error.message))
         })
+    </script>
+    <script>
+        let vid = document.getElementById("bg");
+        vid.playbackRate = 0.5;
     </script>
 </body>
 </html>
