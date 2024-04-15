@@ -70,9 +70,13 @@ body{
 }
 .work-list{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 4vw;
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-gap: 3.5vw;
     margin: 4vh 10vw; 
+
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* grid-gap: 40px; */
+    /* margin-top: 50px; */
 }
 .work{
     border-radius: 8px;
@@ -150,7 +154,15 @@ body{
 .copyright p i{
     size: 0.4em;
 }
-#popup1{
+img{
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+/* .x-icon{
+
+} */
+.popup{
     display: grid;
     grid-template-columns: repeat(auto,1fr);
     position: absolute;
@@ -161,23 +173,87 @@ body{
     height: 90vh;
     padding: 0;
     box-shadow: 0 5px 30px rgba(0, 0, 0, .3);
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.5s;
     background: #efeded;
     overflow-y: auto;
 }
-img{
-    position: relative;
-    width: 100%;
-    margin: 0;
+#popup1{
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
 }
 #popup1.active{
-    top: 40%;
+    /* top: 40%; */
     visibility: visible;
     opacity: 1;
     transition: 0.5s;
 }
-.x-icon{
-
+#popup2{
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+#popup2.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+#popup3{
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+#popup3.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+#popup4{
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+#popup4.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+#popup5{
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+#popup5.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+#popup6{
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+#popup6.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+#popup7{
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+#popup7.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+#popup8{
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+#popup8.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
 }
