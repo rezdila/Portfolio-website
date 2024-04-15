@@ -18,7 +18,9 @@
 
 
     <div id="header">
-        
+        <video autoplay loop muted class="background-video" id="bg">
+            <source src="videos/bg.mp4" type="video/mp4">
+        </video>
         <div id="nav">
             <a href="#/"><img src="Images/logo.png" alt="Logo"></a>
             <ul>           
@@ -54,6 +56,9 @@
 
     <script src="script.js">
     </script>
-
+     <script>
+        let vid = document.getElementById("bg");
+        vid.playbackRate = 0.5;
+    </script>
 </body>
 </html>
