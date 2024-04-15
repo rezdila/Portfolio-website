@@ -287,6 +287,9 @@ body{
 .background-video.fade-out{
     animation: fadeOut 3s ease-in-out forwards;
 }
+#bg{
+    z-index: 0;
+}
 
 
 
