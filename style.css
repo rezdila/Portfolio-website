@@ -383,7 +383,7 @@ body{
 }
 .tab-contents ul li span{
     color: #fe1e1c;
-    font-size: 14px;
+    font-size: 18px;
 }
 .tab-contents{
     display: none;
@@ -684,6 +684,20 @@ form .sbmt{
     text-decoration: none;
     border: none;
 
+}
+#copyright{
+    background-color: rgba(red, green, blue, alpha);
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 300;
+}
+#copyright p{
+    color: #7d7d7d;
+}
+#copyright p i{
+    size: 0.4em;
 }
 .copyright{
     background-color:#0f0f0f;
